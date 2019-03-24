@@ -3,32 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <title>Document</title>
+    <link rel="stylesheet" href="">
 </head>
 <body>
     
-<script>
-
-let money = prompt("Ваш бюджет на месяц","");
-let time = prompt("Введите дату в формате YYYY-MM-DD","");
-
-let firstAnswer;
-let secondAnswer;
-
-let appData = {
-    budget: money,
-    timeData: time,
-    expenses: {
-        firstAnswer: secondAnswer
-    },
-    optionalExpenses: {},
-    income: [],
-    savings: false
-};
-
-firstAnswer = prompt("Введите обязательную статью расходов в этом месяце","");
-secondAnswer = prompt("Во сколько обойдется","");
-
-alert("бюджет на 1 день " + ((money - secondAnswer) / 30));
-</script>
+<script src="js/main.js"></script>
 </body>
 </html>
